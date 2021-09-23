@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Special Bonus Task 2021 Fall</title>
+        <script src="index.js" defer></script>
+        <style>
+            form {
+                margin-bottom: 0.5rem;
+            }
+
+            form label {
+                display: block;
+                margin-bottom: 0.25rem;
+            }
+
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form">
+            <label for="rgb-input">RGB value</label>
+            <input
+                type="text"
+                name="rgb-input"
+                id="rgb-input"
+                placeholder="255,255,255"
+            />
+            <button type="submit">Convert to HEX</button>
+        </form>
+        <div class="hidden">
+            <span id="hex-label"></span>
+            <strong id="hex-value"></strong>
+        </div>
+    </body>
+</html>
